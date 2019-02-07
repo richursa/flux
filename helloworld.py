@@ -6,7 +6,7 @@ rabbitMqQueue = 'hello'     #sample queue name
 channel.queue_declare(queue=rabbitMqQueue)        #define which rabbitMq queue to use 
 #always true loop for dev purpose
 while(1):
-    inputString = input()
+    inputString = raw_input() 
     channel.basic_publish(exchange='' ,routing_key = rabbitMqQueue, body = inputString)     #exchange server '' ? send a msg to queue 
     print inputString , "sent"
 connection.close()      #connection should be closed to flush all msgs from buffer to queue
