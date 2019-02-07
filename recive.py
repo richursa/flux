@@ -1,8 +1,10 @@
 import pika
-connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
+rabbitMqExchangeServer = 'localhost'
+connection = pika.BlockingConnection(pika.ConnectionParameters(host=rabbitMqExchangeServer))
 channel = connection.channel()
-channel.queue_declare(queue='hello')
+rabbitMqQueue = 'hello'     #sample queue name
+channel.queue_declare(queue=rabbitMqQueue)
 def callback(ch , method,properties,body):
 	print "recived " , body
-channel.basic_consume(callback,queue= 'hello',no_ack = True)
+channel.basic_consume(callback,queue= rabbitMqQueue,no_ack = True)
 channel.start_consuming()
