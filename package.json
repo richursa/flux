@@ -1,10 +1,16 @@
 {
-    "name": "sample rest api",
+    "name": "rabbitmq",
     "version": "1.0.0",
     "description": "this is a first attempt at building a REST api",
     "main": "app.js",
     "author": {
         "name": "richu shaji abraham"
+    },
+    "scripts": {
+        "start-server":"node app.js",
+        "start-worker-richukey":"node worker/receiver-richukey",
+        "start-worker-sachukey":"node worker/receiver-sachukey",
+        "start-worker-tittukey":"node worker/receiver-tittukey"
     },
     "dependencies": {
         "amqplib": "^0.5.3",
