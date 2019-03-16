@@ -3,7 +3,7 @@
 
 flux is a simple rabbitmq based api for scheduling tasks with different workers.
 
-![flux architecture](https://photos.app.goo.gl/919upX8QXmqrM4gx5)
+![flux architecture](https://raw.githubusercontent.com/richursa/flux/master/flux-architecture.jpg)
 
 # API CALLS::
 
