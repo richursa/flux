@@ -56,7 +56,7 @@ npm run start-server
 ```
 
 to get the server running
-To get workers running ( worker should be called for each api-key due ) 
+To get workers running ( worker should be called for each api-key ) 
 ```bash
 npm run start-worker-apikey
 ```
