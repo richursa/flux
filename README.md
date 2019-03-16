@@ -74,4 +74,5 @@ for a simple api test client
  ```bash
  node client.js addTask richukey 'console.log("Hello World!")'
  ```
+ NOTE: worker script should be running to receive acknowledgement.
  
