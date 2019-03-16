@@ -75,6 +75,6 @@ for a simple api test client
  node client.js addTask richukey 'console.log("Hello World!")'
  ```
  - requires rabbitmq to be installed    
- for installation refer https://www.rabbitmq.com/download.html
+ for installation refer https://www.rabbitmq.com/download.html    
  NOTE: worker script should be running to receive acknowledgement.
  
