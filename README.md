@@ -3,7 +3,7 @@
 
 flux is a simple rabbitmq based api for scheduling tasks with different workers.
 
-![flux architecture](https://photos.app.goo.gl/919upX8QXmqrM4gx5)
+![flux architecture](https://raw.githubusercontent.com/richursa/flux/master/flux-architecture.jpeg)
 
 # API CALLS::
 
@@ -33,7 +33,7 @@ json raw request:-
 
 "task" : "enter a javascript query which will be evaluated by eval() at worker"
 
-}
+}    
 javascript query should be blocking and synchronous or task completed acknowledgement will be received before actually completing the task
 
   
@@ -74,4 +74,5 @@ for a simple api test client
  ```bash
  node client.js addTask richukey 'console.log("Hello World!")'
  ```
+ NOTE: worker script should be running to receive acknowledgement.
  
