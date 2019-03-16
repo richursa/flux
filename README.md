@@ -33,7 +33,7 @@ json raw request:-
 
 "task" : "enter a javascript query which will be evaluated by eval() at worker"
 
-}
+}    
 javascript query should be blocking and synchronous or task completed acknowledgement will be received before actually completing the task
 
   
