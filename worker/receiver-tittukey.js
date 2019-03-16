@@ -20,8 +20,8 @@ amqp.connect('amqp://localhost',function(err , conn){
       });
 
 
-      channel.assertQueue(queue+'-send',{durable:false})   //durable true ?
-      channel.sendToQueue(queue+'-send',new Buffer(msg.content.toString()+" completed")) //TO-DO close channel after use
+      channel.assertQueue(queue+'-ack',{durable:false})   //durable true ?
+      channel.sendToQueue(queue+'-ack',new Buffer(msg.content.toString()+" completed")) //TO-DO close channel after use
 
       },{noAck:true})
         

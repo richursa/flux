@@ -20,7 +20,7 @@ amqp.connect('amqp://localhost',function(err , conn){
           user.addTask(request.get('To-Do-Key'), user.database, request.body.task);
           response.end(`task ${request.body.task} added`);
 
-          conn.createChannel(function(err,channel){
+          conn.createChannel(function(err,channel){               //addtask to a queue
             let queue = request.get('To-Do-Key') //quename is defined as the key of the user
             channel.assertQueue(queue,{durable : false})
             channel.sendToQueue(queue , new Buffer(request.body.task))

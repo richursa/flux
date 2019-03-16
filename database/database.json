@@ -4,21 +4,17 @@
 		"toDoList": [],
 		"apiCalls": {
 			"getToDoList": 0,
-			"addTask": 1,
-			"totalApiCalls": 1
+			"addTask": 0,
+			"totalApiCalls": 0
 		}
 	},
 	"richukey": {
 		"name": "richu",
-		"toDoList": [
-			"console.log('sachuveee')\n",
-			"console.log(\"richuveee\")",
-			"console.log('jimbhhhhu')"
-		],
+		"toDoList": [],
 		"apiCalls": {
-			"getToDoList": 4,
-			"addTask": 8,
-			"totalApiCalls": 12
+			"getToDoList": 0,
+			"addTask": 0,
+			"totalApiCalls": 0
 		}
 	},
 	"sachukey": {

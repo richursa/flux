@@ -2,9 +2,9 @@ const request = require('request');
 const constant = require('./constants/constant');
 const util = require('util')
 var amqp = require('amqplib/callback_api')
-amqp.connect('amqp://localhost',function(err , conn){
+amqp.connect('amqp://localhost',function(err , conn){   //wait for task acknowledgements from server
     conn.createChannel(function(err , channel){
-        var queue = process.argv[3]+'-send'
+        var queue = process.argv[3]+'-ack'
         channel.assertQueue(queue,{durable:false})
         channel.consume(queue,function(msg){
         util.log(msg.content.toString())

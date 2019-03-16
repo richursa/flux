@@ -7,10 +7,10 @@
         "name": "richu shaji abraham"
     },
     "scripts": {
-        "start-server":"node app.js",
-        "start-worker-richukey":"node worker/receiver-richukey",
-        "start-worker-sachukey":"node worker/receiver-sachukey",
-        "start-worker-tittukey":"node worker/receiver-tittukey"
+        "start-server": "node app.js",
+        "start-worker-richukey": "node worker/receiver-richukey",
+        "start-worker-sachukey": "node worker/receiver-sachukey",
+        "start-worker-tittukey": "node worker/receiver-tittukey"
     },
     "dependencies": {
         "amqplib": "^0.5.3",
