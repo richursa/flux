@@ -72,7 +72,7 @@ for a simple api test client
 
  sample :
  ```bash
- node client.js addTask richukey 'console.log("Hello World!")'
+ node client.js addTask apikey 'console.log("Hello World!")'
  ```
  - requires rabbitmq to be installed    
  for installation refer https://www.rabbitmq.com/download.html    
